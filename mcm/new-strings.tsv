@@ -1,0 +1,30 @@
+english	$DodgeFramework_Stamina_Header	Stamina
+english	$DodgeFramework_RequireStamina_OptionText	Require Stamina
+english	$DodgeFramework_RequireStamina_InfoText	Enable to block dodging when you do not have enough stamina to pay the dodge cost set in the Dodge MCO-DXP menu. Disable to restore the original behaviour, which only blocks dodging at exactly zero stamina.
+chinese	$DodgeFramework_Stamina_Header	耐力
+chinese	$DodgeFramework_RequireStamina_OptionText	需要耐力
+chinese	$DodgeFramework_RequireStamina_InfoText	启用后，当耐力不足以支付 Dodge MCO-DXP 菜单中设置的闪避消耗时将无法闪避。关闭则恢复原版行为，仅在耐力恰好为零时阻止闪避。
+czech	$DodgeFramework_Stamina_Header	Výdrž
+czech	$DodgeFramework_RequireStamina_OptionText	Vyžadovat výdrž
+czech	$DodgeFramework_RequireStamina_InfoText	Zapnuto: uhnutí je zablokováno, pokud nemáte dost výdrže na cenu nastavenou v menu Dodge MCO-DXP. Vypnuto obnoví původní chování, kdy je uhnutí blokováno až při nulové výdrži.
+french	$DodgeFramework_Stamina_Header	Endurance
+french	$DodgeFramework_RequireStamina_OptionText	Exiger de l'endurance
+french	$DodgeFramework_RequireStamina_InfoText	Activez pour empêcher l'esquive lorsque vous n'avez pas assez d'endurance pour payer le coût défini dans le menu Dodge MCO-DXP. Désactivez pour rétablir le comportement d'origine, qui ne bloque l'esquive qu'à zéro endurance.
+german	$DodgeFramework_Stamina_Header	Ausdauer
+german	$DodgeFramework_RequireStamina_OptionText	Ausdauer erforderlich
+german	$DodgeFramework_RequireStamina_InfoText	Aktivieren, um das Ausweichen zu verhindern, wenn die Ausdauer nicht für die im Dodge MCO-DXP-Menü eingestellten Kosten reicht. Deaktivieren stellt das ursprüngliche Verhalten wieder her, bei dem nur bei genau null Ausdauer blockiert wird.
+italian	$DodgeFramework_Stamina_Header	Vigore
+italian	$DodgeFramework_RequireStamina_OptionText	Richiedi vigore
+italian	$DodgeFramework_RequireStamina_InfoText	Attiva per impedire la schivata quando non hai abbastanza vigore per pagare il costo impostato nel menu Dodge MCO-DXP. Disattiva per ripristinare il comportamento originale, che blocca la schivata solo a vigore zero.
+japanese	$DodgeFramework_Stamina_Header	スタミナ
+japanese	$DodgeFramework_RequireStamina_OptionText	スタミナを必要とする
+japanese	$DodgeFramework_RequireStamina_InfoText	有効にすると、Dodge MCO-DXP メニューで設定した回避コストを支払うスタミナが足りない場合は回避できなくなります。無効にすると、スタミナがちょうど 0 のときのみ回避を禁止する元の挙動に戻ります。
+polish	$DodgeFramework_Stamina_Header	Kondycja
+polish	$DodgeFramework_RequireStamina_OptionText	Wymagaj kondycji
+polish	$DodgeFramework_RequireStamina_InfoText	Włącz, aby zablokować unik, gdy nie masz dość kondycji na koszt ustawiony w menu Dodge MCO-DXP. Wyłącz, aby przywrócić pierwotne zachowanie, które blokuje unik dopiero przy zerowej kondycji.
+russian	$DodgeFramework_Stamina_Header	Запас сил
+russian	$DodgeFramework_RequireStamina_OptionText	Требовать запас сил
+russian	$DodgeFramework_RequireStamina_InfoText	Включите, чтобы запретить уклонение, когда запаса сил не хватает на стоимость, заданную в меню Dodge MCO-DXP. Отключите, чтобы вернуть исходное поведение, при котором уклонение блокируется только при нулевом запасе сил.
+spanish	$DodgeFramework_Stamina_Header	Aguante
+spanish	$DodgeFramework_RequireStamina_OptionText	Requerir aguante
+spanish	$DodgeFramework_RequireStamina_InfoText	Actívalo para impedir la esquiva cuando no tengas suficiente aguante para pagar el coste configurado en el menú de Dodge MCO-DXP. Desactívalo para restaurar el comportamiento original, que solo bloquea la esquiva con el aguante a cero.

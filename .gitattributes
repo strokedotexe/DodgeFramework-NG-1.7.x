@@ -1,0 +1,6 @@
+* text=auto eol=lf
+
+# Skyrim requires MCM translation files to stay UTF-16 LE with a BOM.
+mcm/Translations/*.txt binary
+
+*.ps1 text eol=crlf

@@ -1,0 +1,40 @@
+Dodge Framework NG - Skyrim 1.7.x Update
+Copyright 2026 strokedotexe
+
+This product includes software developed by third parties, listed below.
+Changes made by this project are described in CHANGELOG.md.
+
+--------------------------------------------------------------------------------
+
+DodgeFramework-NG
+  Copyright (c) ArcEarth
+  https://github.com/ArcEarth/DodgeFramework-NG
+  Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+  Everything in src/, cmake/ and the MCM translation strings originate here.
+  This project modifies those sources; the modified files carry no change of
+  authorship and remain under the Apache License, Version 2.0.
+
+DodgeFramework
+  Copyright (c) 2019 Ryan-rsm-McKenzie
+  Copyright (c) Ersh (ersh1)
+  https://github.com/ersh1/DodgeFramework
+  Licensed under the MIT License.
+
+  DodgeFramework-NG is a port of this plugin to CommonLibSSE-NG, so the same
+  MIT notice applies to the code it carried over.
+
+CommonLibSSE-NG
+  Copyright (c) CharmedBaryon, Ryan-rsm-McKenzie and contributors
+  https://github.com/alandtse/CommonLibSSE-NG
+  Licensed under the MIT License.
+
+  Consumed as a git submodule and linked statically into the plugin.
+
+--------------------------------------------------------------------------------
+
+Dodge - MCO (DMCO) by Distar / Shikyo Kira is NOT redistributed by this project
+and is NOT covered by the licenses above. This project only replaces the
+DodgeFramework.dll and the Dodge Framework MCM files inside an existing DMCO
+installation; the DMCO animations, behaviours, Papyrus scripts, plugins and
+sounds must be obtained from its own release page.

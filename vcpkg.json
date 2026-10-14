@@ -1,0 +1,18 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
+    "name": "dodge-framework-ng",
+    "version-string": "1.0.0",
+    "description": "A SKSE plugin to trigger dodge animation.",
+    "builtin-baseline": "2976266a3b2aa358e0eed9e89bde2e0cf59daf0a",
+    "dependencies": [
+        "directxmath",
+        "directxtk",
+        "fmt",
+        "nlohmann-json",
+        "rapidcsv",
+        "simpleini",
+        "spdlog",
+        "toml11",
+        "xbyak"
+    ]
+}
