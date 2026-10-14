@@ -1,0 +1,58 @@
+Ready to paste into the Nexus mod page description (BBCode).
+
+[size=5]What this is[/size]
+
+[b]Dodge - MCO (DMCO)[/b] still ships the [font=Courier New]DodgeFramework.dll[/font] built in November 2023. Skyrim 1.7.x changed the Address Library format, that plugin cannot read the new one, and SKSE refuses to load it — so on 1.7.99 and 1.7.104 the dodge key simply does nothing.
+
+This replaces that one file with a rebuild that loads on the current runtimes, and adds an optional stamina requirement.
+
+[b]DMCO is still required.[/b] Nothing from it is redistributed here. The animations, Nemesis/Pandora behaviours, Papyrus scripts, plugins and sounds are all independent of the game version and keep working untouched.
+
+[size=5]Require Stamina[/size]
+
+A new toggle on the Dodge Framework MCM page, [b]on by default[/b]. When on, a dodge is refused unless you have at least as much stamina as the dodge costs. The cost is read from Dodge MCO-DXP's own MCM, so it follows both the percentage toggle and the cost slider — there is no second number to keep in sync.
+
+DMCO normally only refuses a dodge at exactly zero stamina. Because it charges the cost from Papyrus [i]after[/i] the animation starts, and the damage is clamped at zero, that leaves a free dodge available at the bottom of the bar. Turn the option off to get the original behaviour back.
+
+If you change the cost on the [i]Dodge MCO-DXP[/i] page, open and close the [i]Dodge Framework[/i] page once so the new value is picked up (MCM Helper raises its close event per page).
+
+[size=5]Requirements[/size]
+
+[list]
+[*]Skyrim SE/AE 1.6.x – 1.7.104
+[*]SKSE64
+[*]Address Library for SKSE Plugins
+[*]MCM Helper
+[*]Dodge - MCO (DMCO) and everything it requires
+[/list]
+
+[size=5]Installation[/size]
+
+Install with a mod manager and let it load [b]after[/b] DMCO, so it wins the conflict on these four paths:
+
+[code]SKSE/Plugins/DodgeFramework.dll
+MCM/Config/DodgeFramework/config.json
+MCM/Config/DodgeFramework/settings.ini
+Interface/Translations/DodgeFramework_<language>.txt[/code]
+
+In Mod Organizer 2 that means placing it above [font=Courier New]Dodge MCO-DXP[/font] in the left pane. Existing saves are fine; no clean save needed, nothing in the save references this plugin.
+
+[size=5]Technical note[/size]
+
+Skyrim 1.7.x introduced Address Library format 5: a 96-byte header followed by a dense array indexed directly by ID, replacing the delta-compressed format 2. The 2023 binary was built against CommonLibSSE-NG v3.7.0, which only reads formats 1 and 2, hence [i]"must be recompiled for new address library"[/i].
+
+DMCO needs exactly one address from the executable, the [font=Courier New]SprintHandler[/font] vtable (Address Library ID 263057), and it still exists on the new runtimes. So nothing was reverse engineered or reimplemented — rebuilding against a CommonLibSSE that reads format 5 was enough. Source and full write-up on GitHub: https://github.com/strokedotexe/DodgeFramework-NG-1.7.x
+
+[size=5]Credits[/size]
+
+[list]
+[*][b]Ersh[/b] — wrote the Dodge Framework this is a rebuild of
+[*][b]ArcEarth[/b] — ported it to CommonLibSSE-NG, which is the code DMCO ships and that this builds from
+[*][b]distar66[/b] and [b]Shikyo Kira[/b] — Dodge - MCO (DMCO) itself
+[*][b]Doodlez[/b] — earlier Dodge Framework update
+[*][b]Maxsu[/b] — I-Frame Generator and I-Frame Generator RE
+[*][b]FL1NTZ[/b] — updating the 0.9.7 animations to I-Frame Generator RE
+[*][b]alandtse[/b] and the CommonLibSSE-NG contributors — the fork that made this possible
+[/list]
+
+Licensed under the Apache License 2.0, inherited from DodgeFramework-NG. Uploaded under DMCO's author instructions, which allow uploads that add features and keep DMCO as a dependency.
