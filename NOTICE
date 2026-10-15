@@ -27,9 +27,11 @@ DodgeFramework
 CommonLibSSE-NG
   Copyright (c) CharmedBaryon, Ryan-rsm-McKenzie and contributors
   https://github.com/alandtse/CommonLibSSE-NG
-  Licensed under the MIT License.
+  Licensed under the GNU General Public License v3.0 or later, with the modding linking
+  exceptions stated in its EXCEPTIONS.md.
 
-  Consumed as a git submodule and linked statically into the plugin.
+  Consumed as a git submodule and linked statically into the plugin. Those exceptions are
+  what permit linking it into a work distributed under the Apache License, Version 2.0.
 
 --------------------------------------------------------------------------------
 
